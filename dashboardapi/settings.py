@@ -83,7 +83,7 @@ DATABASES = {
     }
 }
 
-ALLOWED_HOSTS = ['dashboard-api-production-ceb7.up.railway.app', "127.0.0.1"]
+ALLOWED_HOSTS = ['data-north-production.up.railway.app', "127.0.0.1"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
