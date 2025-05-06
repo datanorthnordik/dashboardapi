@@ -16,6 +16,9 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+MEDIA_URL = '/uploads/'
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -86,6 +89,8 @@ DATABASES = {
 }
 
 ALLOWED_HOSTS = ['data-north-production.up.railway.app', "127.0.0.1"]
+
+GEMINI_API_KEY = os.environ["GEMINI_API_KEY"]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000", 
