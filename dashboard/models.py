@@ -12,5 +12,6 @@ class Dashboards(models.Model):
     created_time = models.DateField(auto_now=True)
     name = models.CharField(max_length=255)
     link = models.CharField(max_length=255)
+    type = models.CharField(max_length=255, default='Northern Ontario')
     height = models.CharField(max_length=255)
     
